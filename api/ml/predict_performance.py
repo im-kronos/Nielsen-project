@@ -8,11 +8,14 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import json
 
-# Instagram data processing for user segmentation
 print("Instagram User Segmentation")
 
-# Load data from CSV
-instagram_data = pd.read_csv('/Users/dharshanm/Desktop/project /api/data/instagram_data.csv')
+# Load data from JSON
+with open('/Users/dharshanm/Desktop/project /api/data/instagram_data.json', 'r') as json_file:
+    instagram_data = json.load(json_file)
+
+# Convert JSON to DataFrame
+instagram_data = pd.DataFrame(instagram_data)
 
 # Calculate average likes and comments
 instagram_data['average_likes'] = instagram_data['likes_count'] / instagram_data.groupby('username')['post_id'].transform('count')
@@ -41,12 +44,18 @@ with open('segmentation_results.json', 'w') as json_file:
 print(segmentation_results)
 
 
-# Twitter data processing for performance prediction
 print("\nTwitter Performance Prediction")
 
-# Load data
-twitter_users = pd.read_csv('/Users/dharshanm/Desktop/project /api/data/twitter_users.csv')
-twitter_tweets = pd.read_csv('/Users/dharshanm/Desktop/project /api/data/twitter_tweets.csv')
+# Load data from JSON
+with open('/Users/dharshanm/Desktop/project /api/data/twitter_users.json', 'r') as json_file:
+    twitter_users = json.load(json_file)
+    
+with open('/Users/dharshanm/Desktop/project /api/data/twitter_tweets.json', 'r') as json_file:
+    twitter_tweets = json.load(json_file)
+
+# Convert JSON to DataFrames
+twitter_users = pd.DataFrame(twitter_users)
+twitter_tweets = pd.DataFrame(twitter_tweets)
 
 # Calculate engagement metrics
 twitter_tweets['engagement'] = twitter_tweets['retweets_count'] + twitter_tweets['likes_count'] + twitter_tweets['replies_count']
@@ -82,13 +91,16 @@ with open('performance_predictions.json', 'w') as json_file:
     json.dump(twitter_results, json_file, indent=4)
 
 print(twitter_results)
-
-
-# Spotify data processing for churn prediction
+ 
+ 
 print("\nSpotify Churn Prediction")
 
-# Load data
-spotify_data = pd.read_csv('/Users/dharshanm/Desktop/project /api/data/spotify_data.csv')
+# Load data from JSON
+with open('/Users/dharshanm/Desktop/project /api/data/spotify_data.json', 'r') as json_file:
+    spotify_data = json.load(json_file)
+
+# Convert JSON to DataFrame
+spotify_data = pd.DataFrame(spotify_data)
 
 # Select features and target
 spotify_features = spotify_data[['total_playtime', 'total_songs_played', 'average_session_length', 'playlists_created', 'liked_songs_count', 'skip_rate']]
