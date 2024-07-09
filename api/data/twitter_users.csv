@@ -1,0 +1,51 @@
+user_id,username,followers_count,following_count,account_creation_date,location
+1,user1,1500,300,2015-01-01,New York
+2,user2,2500,500,2016-02-01,Los Angeles
+3,user3,1800,400,2017-03-01,Chicago
+4,user4,2000,450,2018-04-01,San Francisco
+5,user5,3000,600,2019-05-01,Seattle
+6,user6,1200,200,2020-06-01,Miami
+7,user7,1400,250,2015-07-01,Denver
+8,user8,2200,350,2016-08-01,Austin
+9,user9,2600,400,2017-09-01,Boston
+10,user10,1800,300,2018-10-01,Portland
+11,user11,2000,450,2019-11-01,San Diego
+12,user12,1700,320,2020-12-01,Las Vegas
+13,user13,2500,400,2015-11-01,Atlanta
+14,user14,1900,300,2016-12-01,Philadelphia
+15,user15,2800,500,2017-01-01,San Antonio
+16,user16,2100,400,2018-02-01,Phoenix
+17,user17,2300,450,2019-03-01,Dallas
+18,user18,1600,250,2020-04-01,Houston
+19,user19,2400,500,2015-05-01,Orlando
+20,user20,2200,300,2016-06-01,Detroit
+21,user21,1800,350,2017-07-01,Minneapolis
+22,user22,2500,450,2018-08-01,Charlotte
+23,user23,1900,320,2019-09-01,Indianapolis
+24,user24,2100,400,2020-10-01,Baltimore
+25,user25,2300,500,2015-11-01,Columbus
+26,user26,1700,300,2016-12-01,Milwaukee
+27,user27,2600,450,2017-01-01,Nashville
+28,user28,2400,400,2018-02-01,Washington
+29,user29,1500,250,2019-03-01,New Orleans
+30,user30,2800,500,2020-04-01,Cleveland
+31,user31,2200,400,2015-05-01,Kansas City
+32,user32,1900,350,2016-06-01,St. Louis
+33,user33,2100,450,2017-07-01,Tampa
+34,user34,2300,400,2018-08-01,Pittsburgh
+35,user35,1700,320,2019-09-01,Memphis
+36,user36,1500,250,2020-10-01,Richmond
+37,user37,2600,500,2015-11-01,Louisville
+38,user38,2400,400,2016-12-01,Birmingham
+39,user39,1800,300,2017-01-01,Jacksonville
+40,user40,2800,500,2018-02-01,Anchorage
+41,user41,2200,400,2019-03-01,Honolulu
+42,user42,1900,350,2020-04-01,Sacramento
+43,user43,2100,450,2015-05-01,Salt Lake City
+44,user44,2300,400,2016-06-01,Reno
+45,user45,1700,320,2017-07-01,Boise
+46,user46,1500,250,2018-08-01,Cheyenne
+47,user47,2600,500,2019-09-01,Juneau
+48,user48,2400,400,2020-10-01,Helena
+49,user49,1800,300,2015-11-01,Bismarck
+50,user50,2800,500,2016-12-01,Charleston
